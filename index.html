@@ -1,0 +1,93 @@
+<html>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"> </script>
+<script type="text/javascript" src="js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src='js/script.js'> </script>
+</HEAD>
+<BODY>
+  <h1> To Do List </h1>
+
+  <FORM name = "eg1" id="pickDate"> 
+   <p> Pick a date for which you want to view your to-do list </p>
+   <p> Date: <input type="text" id="datepicker">  </p>
+   <input id="submitbtn" type="submit" value="Submit"> 
+ </FORM>
+
+ <br>
+ <Br>
+   <div id="calendar">
+     <div class="month-year">      
+      <ul>
+
+        <li value=""> <br>
+          <span style="font-size:18px" id="month"> </span>
+          <span style="font-size:18px" id="year"> </span>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li value="">Mo</li>
+      <li value="">Tu</li>
+      <li value="">We</li>
+      <li value="">Th</li>
+      <li value="">Fr</li>
+      <li value="">Sa</li>
+      <li value="">Su</li>
+    </ul>
+
+    <ul class="days"><span class='wrap'>  
+      <li value="1"><span>1</span></li>
+      <li value="2"><span>2</span></li>
+      <li value="3"><span>3</span></li>
+      <li value="4 "><span>4</span></li>
+      <li value="5"><span>5</span></li>
+      <li value="6"><span>6</span></li>
+      <li value="7"><span>7</span></li>
+      <li value="8"><span>8</span></li>
+      <li value="9"><span>9</span></li>
+      <li value="10"><span>10</span></li>
+      <li value="11"><span>11</span></li>
+      <li value="12"><span>12</span></li>
+      <li value="13"><span>13</span></li>
+      <li value="14"><span>14</span></li>
+      <li value="15"><span>15</span></li>
+      <li value="16"><span>16</span></li>
+      <li value="17"><span>17</span></li>
+      <li value="18"><span>18</span></li>
+      <li value="19"><span>19</span></li>
+      <li value="20"><span>20</span></li>
+      <li value="21"><span>21</span></li>
+      <li value="22"><span>22</span></li>
+      <li value="23"><span>23</span></li>
+      <li value="24"><span>24</span></li>
+      <li value="25"><span>25</span></li>
+      <li value="26"><span>26</span></li>
+      <li value="27"><span>27</span></li>
+      <li value="28"><span>28</span></li>
+      <li value="29" class="opt-feb1" ><span>29</span></li>
+      <li value="30" class="opt-feb2" ><span>30</span></li>
+      <li value="31" class="optional"><span>31</span></li>
+    </span>
+  </ul>
+</div>
+<br>
+<br>
+
+<div class="error hidden"> <p> An Error has occured. Please continue reading for more information </p> <p id="code"> </p>
+</div>
+
+<DIV id="responseArea"> </DIV>
+
+ <li class="item_template"> 
+ <span> 
+ <p id='name'> To do: </p> 
+ <p id='loc'> Location: </p> 
+ <p id='loc' class='time'> Time: </p> 
+ </span>
+ </li>
+
+</BODY>
+</html>
